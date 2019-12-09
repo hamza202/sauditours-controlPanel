@@ -17,6 +17,10 @@ $secondBlueColor: #008095;
 @import "datatables.min.css";
 @import "sweetalert2.min.css";
 @import url('https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800,900&display=swap');
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
 
 $color-map: (
         mainColor: $mainColor,
