@@ -453,7 +453,7 @@ a {
     &:after {
       position: absolute;
       right: 7px;
-      top: 50%;
+      top: 47%;
     }
   }
 
@@ -542,6 +542,8 @@ a {
     color: #777777;
     padding-left:40px ;
     border-radius: 50px;
+    display: flex;
+    justify-items: center;
     outline: 0;
     @extend %transition3;
     &:focus{

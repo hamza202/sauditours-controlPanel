@@ -322,7 +322,7 @@ a {
   .profile-dropdown .dropdown-toggle:after {
     position: absolute;
     right: 7px;
-    top: 50%; }
+    top: 47%; }
 .profile-dropdown .profile-drop-img {
   position: relative; }
   .profile-dropdown .profile-drop-img:before {
@@ -389,6 +389,8 @@ a {
     color: #777777;
     padding-left: 40px;
     border-radius: 50px;
+    display: flex;
+    justify-items: center;
     outline: 0; }
     .search-container input:focus {
       border-color: #3C76F4; }
