@@ -4,10 +4,10 @@
 @import url(sweetalert2.min.css);
 @import url("https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800,900&display=swap");
 html {
-  line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
 .mainColor-bg {
   background: #1F2B6A; }
@@ -126,7 +126,12 @@ p {
 body {
   background-color: #fafafa;
   font-family: 'Tajawal', sans-serif;
-  line-height: 1.15; }
+  line-height: 1.15;
+  /* 1 */ }
+  @media (max-width: 991.98px) {
+    body {
+      line-height: 1;
+      /* 1 */ } }
 
 a {
   text-decoration: none !important; }
