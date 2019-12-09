@@ -401,6 +401,11 @@ a {
     display: flex;
     justify-items: center;
     outline: 0; }
+    @media (max-width: 991.98px) {
+      .search-container input {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 8px; } }
     .search-container input:focus {
       border-color: #3C76F4; }
 
