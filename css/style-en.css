@@ -125,7 +125,8 @@ p {
 
 body {
   background-color: #fafafa;
-  font-family: 'Tajawal', sans-serif; }
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.15; }
 
 a {
   text-decoration: none !important; }
