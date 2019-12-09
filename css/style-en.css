@@ -3,6 +3,12 @@
 @import url(datatables.min.css);
 @import url(sweetalert2.min.css);
 @import url("https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800,900&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
 .mainColor-bg {
   background: #1F2B6A; }
 
@@ -343,12 +349,13 @@ a {
   padding-left: 2.5rem; }
 
 .add-btn {
-  display: block;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   text-align: center;
-  line-height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: #1F2B6A;
   font-size: 33px; }
@@ -356,7 +363,6 @@ a {
     .add-btn {
       width: 40px;
       height: 40px;
-      line-height: 42px;
       font-size: 25px; } }
 
 .my-card {
