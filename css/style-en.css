@@ -408,7 +408,7 @@ a {
   .drop-btn:after {
     position: absolute;
     right: 0;
-    top: 10px; }
+    top: 8px; }
 
 table.data-table.dataTable {
   border-bottom: 0;
@@ -481,7 +481,7 @@ table.data-table.dataTable {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        top: 3px; }
+        top: 0; }
       table.data-table.dataTable tbody tr td span.table-status.s-active:before {
         background-color: #00CDF2; }
       table.data-table.dataTable tbody tr td span.table-status.s-completed:before {
@@ -499,6 +499,7 @@ table.data-table.dataTable {
   padding: 0;
   width: 25px;
   height: 25px;
+  line-height: 27px;
   text-align: center;
   border-radius: 50%; }
   .dataTables_wrapper .dataTables_paginate .paginate_button.current {
