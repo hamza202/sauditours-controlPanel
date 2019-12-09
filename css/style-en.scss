@@ -18,7 +18,7 @@ $secondBlueColor: #008095;
 @import "sweetalert2.min.css";
 @import url('https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800,900&display=swap');
 html {
-
+  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -135,9 +135,9 @@ body {
   background-color: #fafafa;
   font-family: 'Tajawal', sans-serif;
   line-height: 1.15; /* 1 */
-  @include media-breakpoint-down(md){
-    line-height: 1; /* 1 */
-  }
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 a {
