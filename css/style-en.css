@@ -2,10 +2,8 @@
 @import url(fontawesome-all.css);
 @import url(datatables.min.css);
 @import url(sweetalert2.min.css);
-@import url("https://fonts.googleapis.com/css?family=Tajawal:400,500,700,800,900&display=swap");
+@import url(fileinput.css);
 html {
-  line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -moz-text-size-adjust: 100%;
@@ -47,6 +45,12 @@ html {
 .greenColor-color {
   color: #03C38A; }
 
+.grayFaColor-bg {
+  background: #fafafa; }
+
+.grayFaColor-color {
+  color: #fafafa; }
+
 .grayColor-bg {
   background: #9098AC; }
 
@@ -71,12 +75,86 @@ html {
 .secondBlueColor-color {
   color: #008095; }
 
+.fs-10 {
+  font-size: 10px; }
+
+.fs-11 {
+  font-size: 11px; }
+
+.fs-12 {
+  font-size: 12px; }
+
+.fs-13 {
+  font-size: 13px; }
+
+.fs-14 {
+  font-size: 14px; }
+
+.fs-15 {
+  font-size: 15px; }
+
+.fs-16 {
+  font-size: 16px; }
+
+.fs-17 {
+  font-size: 17px; }
+
+.fs-18 {
+  font-size: 18px; }
+
+.fs-19 {
+  font-size: 19px; }
+
+.fs-20 {
+  font-size: 20px; }
+
+.fs-21 {
+  font-size: 21px; }
+
+.fs-22 {
+  font-size: 22px; }
+
+.fs-23 {
+  font-size: 23px; }
+
+.fs-24 {
+  font-size: 24px; }
+
+.fs-25 {
+  font-size: 25px; }
+
+.fs-26 {
+  font-size: 26px; }
+
+.fs-27 {
+  font-size: 27px; }
+
+.fs-28 {
+  font-size: 28px; }
+
+.fs-29 {
+  font-size: 29px; }
+
+.fs-30 {
+  font-size: 30px; }
+
+.my-btn, .light-btn {
+  border: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2B6A;
+  cursor: pointer; }
+  .my-btn:hover, .light-btn:hover {
+    background-color: #008095; }
+
 .notifications-list li .media h5, table.data-table.dataTable tbody tr td .media h5 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
 
-a, .header a.menu-btn:before, .header a.menu-btn:after, .header a.menu-btn span, .search-container input {
+.my-btn, .light-btn, a, .header a.menu-btn:before, .header a.menu-btn:after, .header a.menu-btn span, .search-container input {
   -webkit-transition: all ease-in-out 0.3s;
   -moz-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
@@ -97,6 +175,12 @@ a, .header a.menu-btn:before, .header a.menu-btn:after, .header a.menu-btn span,
 .gray-color {
   color: #9098AC; }
 
+.light-btn {
+  background-color: #008095; }
+  .light-btn:hover {
+    background-color: #1F2B6A;
+    color: #fff; }
+
 p {
   margin: 0; }
 
@@ -106,6 +190,12 @@ p {
 .light-hover:hover {
   color: #3C76F4;
   background-color: #F4F9FF; }
+
+.br-8 {
+  border-radius: 8px; }
+
+.br-5 {
+  border-radius: 5px; }
 
 .fw-400 {
   font-weight: 400 !important; }
@@ -127,9 +217,6 @@ p {
 
 body {
   background-color: #fafafa;
-  font-family: 'Tajawal', sans-serif;
-  line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -moz-text-size-adjust: 100%;
@@ -181,7 +268,7 @@ a {
   display: none; }
 
 .mm-navbar {
-  height: 57px;
+  height: 58px;
   background-color: white; }
   .mm-navbar div img {
     height: 30px;
@@ -236,13 +323,17 @@ a {
   .dashboard-header .navbar ul.navbar-nav li.notifications-dropdown .dropdown-menu {
     width: 350px;
     padding: 0; }
+    @media (max-width: 991.98px) {
+      .dashboard-header .navbar ul.navbar-nav li.notifications-dropdown .dropdown-menu {
+        width: 300px; } }
     .dashboard-header .navbar ul.navbar-nav li.notifications-dropdown .dropdown-menu a {
       padding: 0;
       border-right: 0; }
   .dashboard-header .navbar ul.navbar-nav li.notifications-dropdown a:after {
     display: none; }
   .dashboard-header .navbar ul.navbar-nav li a {
-    padding: 1.1rem 15px 0.9rem; }
+    padding: 1.1rem 15px 0.9rem;
+    height: 57px; }
     .dashboard-header .navbar ul.navbar-nav li a i {
       font-size: 20px; }
 
@@ -316,6 +407,9 @@ a {
     font-size: 17px;
     width: 247px;
     font-weight: 500; }
+    @media (max-width: 991.98px) {
+      .notifications-list li .media h5 {
+        width: 190px; } }
 
 .view-all-nof {
   border-top: 1px solid #D3D3D4;
@@ -391,21 +485,15 @@ a {
     transform: translateY(-50%); }
   .search-container input {
     width: 100%;
-    height: 40px;
-    line-height: 1.6;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 9px;
     border: 1px solid #E2E6EB;
     background-color: #F4F9FF;
     color: #777777;
     padding-left: 40px;
     border-radius: 50px;
-    display: flex;
-    justify-items: center;
     outline: 0; }
-    @media (max-width: 991.98px) {
-      .search-container input {
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 7px; } }
     .search-container input:focus {
       border-color: #3C76F4; }
 
@@ -421,7 +509,7 @@ a {
   .drop-btn:after {
     position: absolute;
     right: 0;
-    top: 8px; }
+    top: 10px; }
 
 table.data-table.dataTable {
   border-bottom: 0;
@@ -447,7 +535,7 @@ table.data-table.dataTable {
     padding: 5px 5px;
     border-bottom: 0;
     border-top: 0;
-    background-color: #F1F4F8;
+    background-color: #F1F4F8 !important;
     color: #777777;
     font-size: 14px; }
     table.data-table.dataTable tbody tr td:first-child {
@@ -494,7 +582,7 @@ table.data-table.dataTable {
         width: 15px;
         height: 15px;
         border-radius: 50%;
-        top: 0; }
+        top: 3px; }
       table.data-table.dataTable tbody tr td span.table-status.s-active:before {
         background-color: #00CDF2; }
       table.data-table.dataTable tbody tr td span.table-status.s-completed:before {
@@ -526,5 +614,68 @@ table.data-table.dataTable {
   .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
     background: #00CDF2;
     border-color: #00CDF2 !important; }
+
+.edit-profile-photo {
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #e0e0e0;
+  width: 120px;
+  height: 120px;
+  position: relative; }
+
+.edit-profile-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover; }
+
+.edit-profile-photo .change-photo-btn {
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 13px;
+  transition: .3s;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: auto; }
+
+.edit-profile-photo .photoUpload {
+  position: relative;
+  overflow: hidden;
+  padding: 3px 12px;
+  height: 100%; }
+
+.edit-profile-photo .photoUpload input.upload {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+  z-index: 5;
+  width: 120px;
+  height: 120px;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.file-drop-zone-title {
+  padding: 40px 10px; }
+
+.kv-file-upload, .file-upload-indicator {
+  display: none !important; }
+
+.krajee-default.file-preview-frame .kv-file-content {
+  width: 203px; }
+
+.file-drop-zone {
+  transition: all ease-in-out 0.3s; }
 
 /*# sourceMappingURL=style-en.css.map */
