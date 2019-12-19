@@ -204,15 +204,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="control-form-container grayFaColor-bg p-3 mt-4">
-                            <form class="" action="#">
+                <form id="addTourForm" action="#" data-parsley-validate="" data-parsley-trigger="change">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="control-form-container grayFaColor-bg p-3 mt-4">
+
                                 <div class="pb-3 border-bottom">
                                     <h4 class="mainColor-color fw-600 fs-20">
                                         Overview
                                     </h4>
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center mb-2">
                                         <div class="col-lg-2 text-lg-right text-left">
                                             <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
                                                 Tour Name:
@@ -224,7 +225,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center mb-2">
                                         <div class="col-lg-2 text-lg-right text-left">
                                             <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
                                                 Tour overview:
@@ -234,7 +235,7 @@
                                         </div>
                                         <div class="col-lg-10">
                                             <div class="form-group">
-                                                <textarea class="form-control" type="text"></textarea>
+                                                <textarea class="form-control"  required></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -243,7 +244,7 @@
                                     <h4 class="mainColor-color fw-600 fs-20">
                                         Tour Details
                                     </h4>
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center mb-2">
                                         <div class="col-lg-2 text-lg-right text-left">
                                             <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
                                                 Region/City:
@@ -253,8 +254,8 @@
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="form-group">
-                                                        <select class="custom-select ">
-                                                            <option selected>Choose...</option>
+                                                        <select class="custom-select" required>
+                                                            <option selected value="">Choose...</option>
                                                             <option value="1">Jeddah</option>
                                                             <option value="2">Jeddah</option>
                                                             <option value="3">Jeddah</option>
@@ -262,38 +263,42 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-7">
-                                                   <div class="row align-items-center">
-                                                       <div class="col-lg-2 pl-lg-0">
-                                                           <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
-                                                               Duration:
-                                                           </p>
-                                                       </div>
-                                                       <div class="col-lg-5 col-6">
-                                                           <div class="form-group">
-                                                               <input class="form-control" min="0" placeholder="Days" required type="number">
-                                                           </div>
-                                                       </div>
-                                                       <div class="col-lg-5 col-6">
-                                                           <div class="form-group">
-                                                               <input class="form-control" min="0" placeholder="Hours" required type="number">
-                                                           </div>
-                                                       </div>
-                                                   </div>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-2 pl-lg-0">
+                                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                                Duration:
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-lg-5 col-6">
+                                                            <div class="form-group">
+                                                                <input class="form-control" min="0" placeholder="Days"
+                                                                       required type="number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-6">
+                                                            <div class="form-group">
+                                                                <input class="form-control" min="0" placeholder="Hours"
+                                                                       required type="number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center mb-2">
                                         <div class="col-lg-2 text-lg-right text-left">
                                             <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
                                                 Destinations:
                                             </p>
                                         </div>
                                         <div class="col-lg-10">
-                                            <div class="input-group  mb-3">
-                                                <input type="text" class="form-control" placeholder="Destinations" aria-label="Destinations">
+                                            <div class="input-group  mb-2">
+                                                <input type="text" class="form-control" placeholder="Destinations"
+                                                       aria-label="Destinations" required>
                                                 <div class="input-group-append">
-                                                    <button type="button" class="input-group-text btn light-btn fs-23 new-destinations">
+                                                    <button type="button"
+                                                            class="input-group-text btn light-btn fs-23 new-destinations">
                                                         <i class="fal fa-plus"></i>
                                                     </button>
                                                 </div>
@@ -303,7 +308,7 @@
                                     <div class="row my-repeater-container destinations-container">
 
                                     </div>
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center ">
                                         <div class="col-lg-2 text-lg-right text-left">
                                             <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
                                                 Is pickup Available?
@@ -313,7 +318,7 @@
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="form-group">
-                                                        <select class="custom-select ">
+                                                        <select class="custom-select" required>
                                                             <option selected>Yes</option>
                                                             <option value="1">No</option>
                                                         </select>
@@ -357,22 +362,24 @@
                                                         <img class="profile-pic pic1" src="image/upload.png" alt="">
                                                         <div class="change-photo-btn">
                                                             <div class="photoUpload">
-                                                                <input type="file" name="file1" class="upload file-upload up1">
+                                                                <input type="file" name="file1"
+                                                                       class="upload file-upload up1"  data-parsley-errors-container="#file1_upload" required>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div id="file1_upload" class="position-relative pl-2 mt-n2"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12">
+                                        <div class="col-lg-12 mb-3">
                                             <p class="mainColor-color mb-2 fs-16 ">
                                                 Additional
                                                 Photos:
                                             </p>
-                                            <div class="file-loading">
-                                                <input id="file-multiple" name="file-multiple" type="file"
-                                                       data-browse-on-zone-click="true" multiple required>
+                                            <div class="file-loading ">
+                                                <input id="file-multiple" data-parsley-errors-container="#file_multiple_upload" name="file-multiple"  type="file" multiple required>
                                             </div>
+                                            <div id="file_multiple_upload"  class="position-relative pl-2 "></div>
                                         </div>
                                     </div>
                                 </div>
@@ -390,7 +397,7 @@
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="form-group">
-                                                        <input class="form-control" required=""  type="text">
+                                                        <input class="form-control" required="" type="text">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-7">
@@ -402,7 +409,7 @@
                                                         </div>
                                                         <div class="col-lg-10">
                                                             <div class="form-group">
-                                                                <input class="form-control" required=""  type="text">
+                                                                <input class="form-control" required="" type="text">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -425,7 +432,7 @@
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <div class="form-group">
-                                                        <input class="form-control" required=""  type="text">
+                                                        <input class="form-control" required="" type="text">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-7">
@@ -437,9 +444,12 @@
                                                         </div>
                                                         <div class="col-lg-10">
                                                             <div class="input-group  mb-3">
-                                                                <input type="text" class="form-control" placeholder="Languages" aria-label="Destinations">
+                                                                <input type="text" class="form-control"
+                                                                       placeholder="Languages"
+                                                                       aria-label="Destinations" required>
                                                                 <div class="input-group-append">
-                                                                    <button type="button" class="input-group-text btn light-btn fs-23 new-languages">
+                                                                    <button type="button"
+                                                                            class="input-group-text btn light-btn fs-23 new-languages">
                                                                         <i class="fal fa-plus"></i>
                                                                     </button>
                                                                 </div>
@@ -480,24 +490,30 @@
                                                         <label class="custom-control-label" for="Tea">Tea</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="arabicCoffee">
-                                                        <label class="custom-control-label" for="arabicCoffee">Arabic Coffee</label>
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="arabicCoffee">
+                                                        <label class="custom-control-label" for="arabicCoffee">Arabic
+                                                            Coffee</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="Dates">
                                                         <label class="custom-control-label" for="Dates">Dates</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="arabicDesserts">
-                                                        <label class="custom-control-label" for="arabicDesserts">Arabic desserts</label>
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="arabicDesserts">
+                                                        <label class="custom-control-label" for="arabicDesserts">Arabic
+                                                            desserts</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="Snacks">
                                                         <label class="custom-control-label" for="Snacks">Snacks</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="Breakfast">
-                                                        <label class="custom-control-label" for="Breakfast">Breakfast</label>
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="Breakfast">
+                                                        <label class="custom-control-label"
+                                                               for="Breakfast">Breakfast</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
                                                         <input type="checkbox" class="custom-control-input" id="Lunch">
@@ -516,21 +532,366 @@
                                                         <label class="custom-control-label" for="Water">Water</label>
                                                     </div>
                                                     <div class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="Air-conditionedVehicle">
-                                                        <label class="custom-control-label" for="Air-conditionedVehicle">Air-conditioned vehicle</label>
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="Air-conditionedVehicle">
+                                                        <label class="custom-control-label"
+                                                               for="Air-conditionedVehicle">Air-conditioned
+                                                            vehicle</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3 mt-lg-0">
+                                            <div class="row h-100 align-items-baseline ">
+                                                <div class="col-12">
+                                                    <div class="row align-items-start">
+                                                        <div class="col-md-4 pr-md-0 pl-md-0 text-md-right">
+                                                            <p class="mainColor-color mb-lg-3 mb-1 fs-15 ">
+                                                                Use of Equipment:
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="scubaAquipment">
+                                                                <label class="custom-control-label"
+                                                                       for="scubaAquipment">SCUBA equipment</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="snorkelingEquipment">
+                                                                <label class="custom-control-label"
+                                                                       for="snorkelingEquipment">Snorkeling
+                                                                    equipment</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="Bicycle">
+                                                                <label class="custom-control-label" for="Bicycle">Bicycle</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="hikingEquipment">
+                                                                <label class="custom-control-label"
+                                                                       for="hikingEquipment">Hiking equipment</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="specify">
+                                                                <label class="custom-control-label" for="specify">Other:
+                                                                    specify </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-lg-0 mt-3 align-self-center">
+                                                    <div class="row align-items-start">
+                                                        <div class="col-md-4 pr-md-0 pl-md-0 text-md-right">
+                                                            <p class="mainColor-color mb-lg-3 mb-1 fs-15 ">
+                                                                Transportation:
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="privateTransportation">
+                                                                <label class="custom-control-label"
+                                                                       for="privateTransportation">Private
+                                                                    transportation</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="publicTransportation">
+                                                                <label class="custom-control-label"
+                                                                       for="publicTransportation">Public Transportation
+                                                                    (or Bus)</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="None">
+                                                                <label class="custom-control-label"
+                                                                       for="None">None</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 align-self-end ">
+                                                    <div class="row align-items-start">
+                                                        <div class="col-md-4 pr-md-0 pl-md-0 text-md-right">
+                                                            <p class="mainColor-color  mb-1 fs-15 ">
+                                                                Wifi:
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                       id="Wifi">
+                                                                <label class="custom-control-label"
+                                                                       for="Wifi">Wifi</label>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="pb-3 pt-4 border-bottom">
+                                    <h4 class="mainColor-color fw-600 fs-20">
+                                        Tour Capacity
+                                    </h4>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 text-lg-right text-left">
+                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                Minimum:
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="form-group">
+                                                        <input class="form-control" required="" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-2 pl-lg-0 text-lg-right">
+                                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                                Maximum:
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-lg-10">
+                                                            <div class="form-group">
+                                                                <input class="form-control" required="" type="number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3 pt-4 border-bottom">
+                                    <h4 class="mainColor-color fw-600 fs-20">
+                                        Availability
+                                    </h4>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 text-lg-right text-left">
+                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                Date/Time:
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="form-group">
+                                                <input class="form-control datetimes" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 offset-lg-2">
+                                            <div class="row justify-content-between">
+                                                <div class="col-md-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="allYear" name="DateDay[]" required data-parsley-errors-container="#validation_check">
+                                                        <label class="custom-control-label"
+                                                               for="allYear">all Year</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" name="DateDay[]" class="custom-control-input"
+                                                               id="allWeekends">
+                                                        <label class="custom-control-label" for="allWeekends">All
+                                                            weekends</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" name="DateDay[]" class="custom-control-input"
+                                                               id="allWeekdays">
+                                                        <label class="custom-control-label" for="allWeekdays">All
+                                                            weekdays</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12 pb-1">
+                                                    <div id="validation_check" class="position-relative" >
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3 pt-4 border-bottom">
+                                    <h4 class="mainColor-color fw-600 fs-20">
+                                        Prices
+                                    </h4>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col-lg-2 text-lg-right text-left">
+                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                Current Price:
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control fs-14" required=""
+                                                               placeholder="Per adult" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control fs-14" required=""
+                                                               placeholder="Per child (3-14 years old)" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control fs-14" required=""
+                                                               placeholder="Per infant (0-3 years free)" type="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 text-lg-right text-left">
+                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                Old price:
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control fs-14" required=""
+                                                               placeholder="Per adult" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control fs-14" required=""
+                                                               placeholder="Per child (3-14 years old)" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <input class="form-control fs-14" required=""
+                                                               placeholder="Per infant (0-3 years free)" type="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3 pt-4 border-bottom">
+                                    <h4 class="mainColor-color fw-600 fs-20">
+                                        Cancellation policy
+                                    </h4>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-2 text-lg-right text-left">
+                                            <p class="mainColor-color mb-lg-3 mb-1 fs-16 ">
+                                                Status:
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="form-group">
+                                                <select class="custom-select" required>
+                                                    <option selected="" value="1">24 hours prior to the tour start</option>
+                                                    <option value="2">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3 pt-4">
+                                    <h4 class="mainColor-color fw-600 fs-20">
+                                        Confirm Terms and Conditions
+                                    </h4>
+                                    <ul class="condition-list">
+                                        <li>
+                                            I agree to the <a href="#" class="main-link" target="_blank">Terms of Use</a> and the
+                                            <a href="#" class="main-link" target="_blank">Supplier Terms and Conditions</a>.
+                                        </li>
+                                        <li>
+                                            I may receive important notifications (e.g. booking details) from SaudiTours.
+                                        </li>
+                                    </ul>
+                                    <div class="custom-control custom-checkbox ml-3">
+                                        <input type="checkbox" class="custom-control-input" id="conditions" required data-parsley-errors-container="#condition_check">
+                                        <label class="custom-control-label mainColor-color" for="conditions">I have read the above terms and agree.</label>
+                                    </div>
+                                    <div class="position-relative pl-3" id="condition_check">
+
+                                    </div>
+                                    <div class="row justify-content-end mt-3">
+                                        <div class="col-auto">
+                                            <button class="my-btn py-2 px-5 rounded-pill" type="submit">
+                                                Add Tour
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 text-lg-left text-center">
+                    <div class="row justify-content-between">
+                        <div class="col-md-auto text-center text-md-left">
+                            <p class="mb-2 mb-md-0 color-777">
+                                &copy; Saudi Tours 2020. All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="col-md-auto text-center text-md-left">
+                            <ul class="list-inline mb-2 mb-md-0 footer-lest">
+                                <li class="list-inline-item">
+                                    <a href="#" class="gray-link">
+                                        Privacy policy
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="gray-link">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-5 text-lg-right text-center">
+                    <ul class="list-inline social-list">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
     <nav id="menu" class="shadow-sm">
         <ul>
             <li class="active">

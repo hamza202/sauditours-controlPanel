@@ -7,4 +7,6 @@ document.write('<script type="text/javascript" src="js/fileinput.min.js" ></scri
 document.write('<script type="text/javascript" src="js/locales/ar.js" ></script>');
 document.write('<script type="text/javascript" src="js/fas/theme.js" ></script>');
 document.write('<script type="text/javascript" src="js/explorer-fas/theme.js" ></script>');
-
+document.write('<script type="text/javascript" src="js/moment.min.js" ></script>');
+document.write('<script type="text/javascript" src="js/daterangepicker.js" ></script>');
+document.write('<script type="text/javascript" src="js/parsley.min.js" ></script>');

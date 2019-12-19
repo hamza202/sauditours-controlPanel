@@ -3,6 +3,7 @@
 @import url(datatables.min.css);
 @import url(sweetalert2.min.css);
 @import url(fileinput.css);
+@import url(daterangepicker.css);
 html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -231,6 +232,11 @@ a {
   color: #3C76F4; }
   .light-link:hover {
     color: #1F2B6A; }
+
+.main-link {
+  color: #1F2B6A; }
+  .main-link:hover {
+    color: #3C76F4; }
 
 .gray-link {
   color: #777777; }
@@ -619,16 +625,16 @@ table.data-table.dataTable {
   margin: 10px auto;
   display: block;
   border-radius: 5px;
-  overflow: hidden;
   border: 2px solid #e0e0e0;
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   position: relative; }
 
 .edit-profile-photo img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover; }
+  width: 121px;
+  height: 121px;
+  object-fit: cover;
+  border-radius: 5px; }
 
 .edit-profile-photo .change-photo-btn {
   background-color: transparent;
@@ -646,7 +652,6 @@ table.data-table.dataTable {
 
 .edit-profile-photo .photoUpload {
   position: relative;
-  overflow: hidden;
   padding: 3px 12px;
   height: 100%; }
 
@@ -661,8 +666,8 @@ table.data-table.dataTable {
   padding: 0;
   display: block;
   z-index: 5;
-  width: 120px;
-  height: 120px;
+  width: 121px;
+  height: 121px;
   opacity: 0;
   filter: alpha(opacity=0); }
 
@@ -677,5 +682,53 @@ table.data-table.dataTable {
 
 .file-drop-zone {
   transition: all ease-in-out 0.3s; }
+
+.custom-checkbox label, .custom-checkbox input {
+  cursor: pointer; }
+
+.condition-list li {
+  color: #707070;
+  font-size: 14px; }
+
+footer {
+  background-color: white;
+  padding: 20px 0; }
+
+.footer-lest li:not(:first-child) {
+  position: relative; }
+  .footer-lest li:not(:first-child):before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    display: block;
+    height: 15px;
+    width: 1px;
+    background-color: #777; }
+
+.color-777 {
+  color: #777; }
+
+.social-list {
+  margin-bottom: 0; }
+  .social-list li:not(:last-child) {
+    padding-right: 10px; }
+  .social-list a {
+    color: #C6C6C6;
+    font-size: 20px; }
+    .social-list a:hover {
+      color: #1F2B6A; }
+
+ul.parsley-errors-list {
+  color: red;
+  margin-bottom: 0;
+  font-size: 13px;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  bottom: -17px; }
+
+.form-group {
+  position: relative; }
 
 /*# sourceMappingURL=style-en.css.map */

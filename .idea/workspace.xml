@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="faffc645-cca3-4e4a-b962-aa68012e80a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/add-tour.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style-en.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-en.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style-en.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-en.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style-en.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-en.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
@@ -90,7 +90,11 @@
       <workItem from="1575887499913" duration="15918000" />
       <workItem from="1576278190847" duration="1290000" />
       <workItem from="1576410297785" duration="10128000" />
-      <workItem from="1576425550604" duration="13197000" />
+      <workItem from="1576425550604" duration="24566000" />
+      <workItem from="1576594040820" duration="4714000" />
+      <workItem from="1576660077016" duration="781000" />
+      <workItem from="1576669535973" duration="10934000" />
+      <workItem from="1576708797196" duration="1678000" />
     </task>
     <servers />
   </component>
@@ -111,6 +115,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="363" y="91" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576669871735">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="91" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1576669871735" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1576509150482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

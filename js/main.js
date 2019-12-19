@@ -147,7 +147,7 @@ $('#file-multiple').fileinput({
     theme: 'fas',
     rtl: false,
     // showCaption: false,
-    // dropZoneEnabled: false,
+    dropZoneEnabled: false,
     dropZoneTitle: 'drag and drop or click to add images',
     dropZoneClickTitle: '',
     showUpload: false,
@@ -159,3 +159,33 @@ $('#file-multiple').fileinput({
     uploadUrl: '#',
     allowedFileExtensions: ['jpg', 'png', 'jpeg']
 });
+
+// date range picker
+$(function() {
+    $('input.datetimes').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+            format: 'M/DD/YY hh:mm A'
+        }
+    });
+});
+
+//validation
+
+// $("#addTourForm").validate({
+//     ignore: "",
+//     rules: {
+//         file1:{
+//             required: true,
+//         },
+//         "services[]": {
+//             required: true,
+//             minlength: 1
+//         }
+//     },
+//     messages: {
+//         "services[]": "الرجاء اختيار خدمة واحدة على الأقل"
+//     }
+// });
