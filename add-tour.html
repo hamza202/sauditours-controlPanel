@@ -936,6 +936,99 @@
 
 <script src="js/script.js"></script>
 <script src="js/main.js"></script>
+<script>
+    //Repeater
+    $('.new-destinations').on('click', function () {
+        $('.my-repeater-container.destinations-container')
+            .prepend($(
+                '<div class="col-lg-10 offset-lg-2">\n' +
+                '    <div class="input-group mb-3">\n' +
+                '        <input type="text" class="form-control" placeholder="Destinations" aria-label="Destinations">\n' +
+                '        <div class="input-group-append">\n' +
+                '            <button type="button" class="input-group-append btn dell-btn btn-danger fs-23">\n' +
+                '                <i class="fal fa-times"></i>\n' +
+                '            </button>\n' +
+                '        </div>\n' +
+                '    </div>\n' +
+                '</div>'
+                ).hide().fadeIn(500)
+            )
+        ;
+    });
+    $('.my-repeater-container.destinations-container').on('click', '.dell-btn', function () {
+        $(this).closest('.col-lg-10').fadeOut(400);
+    });
 
+
+    $('.new-languages').on('click', function () {
+        $('.my-repeater-container.lang-container')
+            .prepend($(
+                '<div class="col-lg-6">\n' +
+                '    <div class="input-group mb-3">\n' +
+                '        <input type="text" class="form-control" placeholder="Languages" aria-label="languages">\n' +
+                '        <div class="input-group-append">\n' +
+                '            <button type="button" class="input-group-append btn dell-btn btn-danger fs-23">\n' +
+                '                <i class="fal fa-times"></i>\n' +
+                '            </button>\n' +
+                '        </div>\n' +
+                '    </div>\n' +
+                '</div>'
+                ).hide().fadeIn(500)
+            )
+        ;
+    });
+    $('.my-repeater-container.lang-container').on('click', '.dell-btn', function () {
+        $(this).closest('.col-lg-6').fadeOut(400);
+    });
+    //Change file img
+
+    $(document).ready(function() {
+
+        $(".up1").on('change', function(){
+            var readURL = function(input=['file']) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.pic1').attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            };
+            readURL(this);
+        });
+    });
+
+    //File Upload
+    $('#file-multiple').fileinput({
+        theme: 'fas',
+        rtl: false,
+        // showCaption: false,
+        dropZoneEnabled: false,
+        dropZoneTitle: 'drag and drop or click to add images',
+        dropZoneClickTitle: '',
+        showUpload: false,
+        language: 'en',
+        overwriteInitial: false,
+        // maxFileSize: 4000,
+        maxFilesNum: 10,
+        maxFileCount: 10,
+        uploadUrl: '#',
+        allowedFileExtensions: ['jpg', 'png', 'jpeg']
+    });
+
+    // date range picker
+    $(function() {
+        $('input.datetimes').daterangepicker({
+            timePicker: true,
+            startDate: moment().startOf('hour'),
+            endDate: moment().startOf('hour').add(32, 'hour'),
+            locale: {
+                format: 'M/DD/YY hh:mm A'
+            }
+        });
+    });
+</script>
 </body>
 </html>
