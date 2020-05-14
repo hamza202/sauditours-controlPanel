@@ -1,4 +1,5 @@
 //Mmenu
+
 new Mmenu(document.querySelector('#menu'),
     {
         drag: true,
@@ -13,7 +14,7 @@ new Mmenu(document.querySelector('#menu'),
         },
         navbars: [
             {
-                content: ['<div><img src="./image/logo.png"></div>', 'close']
+                content: ['<div><img src='+logo+'></div>', 'close']
             }
         ]
     }
