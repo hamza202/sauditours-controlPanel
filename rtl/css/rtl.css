@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'cocon';
+    src: url("../fonts/CoconNextArabicLight.eot");
+    src: url("../fonts/CoconNextArabicLight.eot") format("embedded-opentype"), url("../fonts/CoconNextArabicLight.woff2") format("woff2"), url("../fonts/CoconNextArabicLight.woff") format("woff"), url("../fonts/CoconNextArabicLight.ttf") format("truetype"), url("../fonts/CoconNextArabicLight.svg#CoconNextArabicLight") format("svg"); }
+body{
+    direction: rtl;
+    font-family: cocon , 'sans-serif' !important;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled{
+    background-position: center left;
+}
+.mm-wrapper_sidebar-expanded:not(.mm-wrapper_sidebar-closed) .mm-menu_sidebar-expanded.mm-menu_opened ~ .mm-slideout{
+    transform: translate3d(-250px, 0, 0);
+}
+.mm-wrapper_sidebar-collapsed .mm-menu_sidebar-collapsed, .mm-wrapper_sidebar-expanded .mm-menu_sidebar-expanded{
+    right: 0 !important;
+    left: auto !important;
+}
+.header a.menu-btn{
+    right: 0;
+    left: auto;
+}
+.dataTables_wrapper .dataTables_paginate{
+    float: left;
+}
+.dataTables_wrapper .dataTables_length{
+    float: right;
+}
+.fa-angle-right, .fa-angle-left{
+    transform: rotate(180deg);
+    position: relative;
+    top: -3px;
+}
+.profile-dropdown .dropdown-toggle:after{
+    left: 7px;
+    right: auto;
+}
+.my-drop .dropdown-menu:before{
+    left: 19px;
+    right: auto;
+}
+.mm-listitem__text{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.mm-menu .mm-listview li.active:before{
+    left: 0;
+    right: auto;
+}
+table.data-table.dataTable tbody tr td span.table-status:before{
+    right: 0;
+    left: auto;
+}
+table.data-table.dataTable tbody tr td span.table-status{
+    padding-right: 19px;
+    padding-left: 0;
+}
+.dashboard-header .navbar ul.navbar-nav li:not(:last-child) a {
+    border-right: 0;
+    border-left: 1px solid #EAEEF2;
+}
+.drop-btn{
+    padding-right: 6px;
+    padding-left: 14px;
+}
+.drop-btn:after{
+    left: 0;
+    right: auto;
+}
+.search-container input{
+    padding-right: 40px;
+    padding-left: 10px;
+}
+.search-container i{
+    right: 15px;
+    left: auto;
+}
+table.data-table.dataTable tbody tr td .media h5,
+table.data-table.dataTable thead tr th{
+    font-size: 14px;
+}
+table.data-table.dataTable tbody tr td{
+    font-size: 13px;
+}
+.dashboard-header .navbar ul.navbar-nav li.notifications-dropdown .dropdown-menu a{
+    border-left: 0;
+}
+.notifications-list li.new-notifications-child .notifications-list-img:before{
+    left: -2px;
+    right: auto;
+}
+.footer-lest li:not(:first-child):before{
+    left: auto;
+    right: -7px;
+}
+.list-tours li .date{
+    left: 5px;
+    right: auto;
+}
+.list-tours li .card-tores .img{
+    margin-left: 10px;
+    margin-right: auto;
+}
+.list-tours li .card-tores .img.status:after{
+    left: -7px;
+    right: auto;
+}
+ul.list-evans li i,.link-status{
+    margin-left: 10px;
+    margin-right: 0;
+}
+.select_month, .select_year{
+    margin-right: 15px;
+    margin-left: auto;
+    border-right: 2px solid #e6e6e6;
+    border-left: 0;
+}

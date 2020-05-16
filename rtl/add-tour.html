@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="image/favicon.png" type="image/png">
     <title>Saudi Tours Control Panel</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/rtl/bootstrap.min.css">
     <link rel="stylesheet" href="css/style-en.css">
+    <link rel="stylesheet" href="css/rtl.css">
 </head>
 <body>
 
@@ -1024,6 +1025,7 @@
     $(function() {
         $('input.datetimes').daterangepicker({
             timePicker: true,
+            opens: 'left',
             startDate: moment().startOf('hour'),
             endDate: moment().startOf('hour').add(32, 'hour'),
             locale: {

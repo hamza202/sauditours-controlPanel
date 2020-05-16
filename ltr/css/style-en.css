@@ -296,15 +296,9 @@ html {
 .my-btn, .light-btn {
   border: 0;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #1F2B6A;
   cursor: pointer; }
   .my-btn:hover, .light-btn:hover {
@@ -316,7 +310,6 @@ html {
   text-overflow: ellipsis; }
 
 .my-btn, .light-btn, a, .header a.menu-btn:before, .header a.menu-btn:after, .header a.menu-btn span, .search-container input {
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s; }
 
 .mm-menu .mm-panel::-webkit-scrollbar-track {
@@ -463,8 +456,7 @@ a {
       height: 20px;
       right: 0;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
+      transform: translateY(-50%); }
     .mm-menu .mm-listview li.active a {
       color: #3C76F4;
       background-color: #F4F9FF; }
@@ -516,6 +508,7 @@ a {
     border-radius: 50%;
     background-color: #EF4351;
     -webkit-box-shadow: 0px 0px 0px 3px rgba(239, 67, 81, 0.2);
+    -moz-box-shadow: 0px 0px 0px 3px rgba(239, 67, 81, 0.2);
     box-shadow: 0px 0px 0px 3px rgba(239, 67, 81, 0.2); }
 
 .my-drop .dropdown-menu {
@@ -560,12 +553,12 @@ a {
       background-color: #EF4351;
       border-radius: 50%;
       -webkit-box-shadow: 0px 0px 0px 2px white;
+      -moz-box-shadow: 0px 0px 0px 2px white;
       box-shadow: 0px 0px 0px 2px white; }
   .notifications-list li .media img {
     width: 55px;
     height: 55px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 7px; }
   .notifications-list li .media h5 {
     color: #1F2B6A;
@@ -620,15 +613,9 @@ a {
   height: 60px;
   border-radius: 50%;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: #1F2B6A;
   font-size: 33px; }
@@ -653,8 +640,7 @@ a {
     color: #777;
     left: 15px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    transform: translateY(-50%); }
   .search-container input {
     width: 100%;
     height: auto;
@@ -735,8 +721,7 @@ table.data-table.dataTable {
           background-color: #3C76F4; }
     table.data-table.dataTable tbody tr td .media img {
       border-radius: 5px;
-      -o-object-fit: cover;
-         object-fit: cover;
+      object-fit: cover;
       height: 45px;
       width: 45px; }
     table.data-table.dataTable tbody tr td .media h5 {
@@ -801,8 +786,7 @@ table.data-table.dataTable {
 .edit-profile-photo img {
   width: 121px;
   height: 121px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px; }
 
 .edit-profile-photo .change-photo-btn {
@@ -810,7 +794,6 @@ table.data-table.dataTable {
   border-radius: 50%;
   display: inline-block;
   font-size: 13px;
-  -webkit-transition: .3s;
   transition: .3s;
   line-height: 20px;
   position: absolute;
@@ -851,7 +834,6 @@ table.data-table.dataTable {
   width: 203px; }
 
 .file-drop-zone {
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s; }
 
 .custom-checkbox label, .custom-checkbox input {
@@ -963,12 +945,8 @@ ul.list-evans {
     padding: 5px 0;
     overflow: hidden;
     padding: 5px 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-bottom: 20px; }
     ul.list-evans li:last-child {
       margin-bottom: 0; }
@@ -1021,17 +999,12 @@ ul.list-evans {
       color: #9098AC;
       font-size: 12px; }
     .list-tours li .card-tores {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
+      justify-content: space-between; }
       .list-tours li .card-tores .img {
         width: 50px;
         height: 50px;
-        -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         border-radius: 10px;
         margin-right: 10px;
         position: relative;
@@ -1080,47 +1053,28 @@ ul.list-evans {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  align-items: center;
+  justify-content: center; }
 .fc-content-skeleton tbody {
   position: absolute;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  align-items: center;
+  justify-content: center; }
 .fc-content-skeleton tr {
   width: 100%;
   position: relative;
   right: 0;
   left: 0;
   height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-around;
+  align-items: center;
   display: flex; }
   .fc-content-skeleton tr td {
     width: 14.28%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
     .fc-content-skeleton tr td .fc-day-number {
       color: #C6C6C6; }
@@ -1157,9 +1111,7 @@ ul.list-evans {
   border: none;
   border-bottom: 2px solid #fff;
   background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: 0.3s ease-in-out;
+  box-shadow: none;
   transition: 0.3s ease-in-out;
   font-size: 14px;
   color: #777777;
@@ -1192,4 +1144,5 @@ footer.bg-white {
       padding: 5px; }
   footer.bg-white a {
     color: #888888; }
+
 /*# sourceMappingURL=style-en.css.map */
