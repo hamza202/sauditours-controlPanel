@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78418d38-526a-431f-bbaa-52b658bcb5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rtl/css/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltr/css/style-en.css" beforeDir="false" afterPath="$PROJECT_DIR$/ltr/css/style-en.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltr/css/style-en.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ltr/css/style-en.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ltr/css/style-en.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ltr/css/style-en.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/Bookings.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/Bookings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/Calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/Calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/Notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/Notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/Wallet.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/Wallet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/add-tour.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/add-tour.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/contact-us-help.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/contact-us-help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/css/mmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/css/mmenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/css/style-en.css" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/css/style-en.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/css/style-en.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/css/style-en.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/css/style-en.scss" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/css/style-en.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtl/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/rtl/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltr/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ltr/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,19 +62,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589580693397</updated>
-      <workItem from="1589580696342" duration="8820000" />
+      <workItem from="1589580696342" duration="9089000" />
+      <workItem from="1590017993611" duration="763000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -1,24 +1,27 @@
 //Mmenu
 
-new Mmenu(document.querySelector('#menu'),
-    {
-        drag: true,
-        pageScroll: {
-            scroll: true,
-            update: true
-        },
-        sidebar: {
-            expanded: {
-                use: '(min-width: 1300px)',
-            }
-        },
-        navbars: [
-            {
-                content: ['<div><img src='+logo+'></div>', 'close']
-            }
-        ]
-    }
-);
+if($("#menu").length){
+    new Mmenu(document.querySelector('#menu'),
+        {
+            drag: true,
+            pageScroll: {
+                scroll: true,
+                update: true
+            },
+            sidebar: {
+                expanded: {
+                    use: '(min-width: 1300px)',
+                }
+            },
+            navbars: [
+                {
+                    content: ['<div><img src='+logo+'></div>', 'close']
+                }
+            ]
+        }
+    );
+}
+
 
 //Notifications
 $(".clear-all-btn-nof").on('click', function (e) {
