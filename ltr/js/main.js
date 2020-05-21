@@ -4,6 +4,9 @@ if($("#menu").length){
     new Mmenu(document.querySelector('#menu'),
         {
             drag: true,
+            keyboardNavigation: {
+                enable: true
+            },
             pageScroll: {
                 scroll: true,
                 update: true
@@ -21,7 +24,6 @@ if($("#menu").length){
         }
     );
 }
-
 
 //Notifications
 $(".clear-all-btn-nof").on('click', function (e) {

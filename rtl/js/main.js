@@ -7,6 +7,9 @@ new Mmenu(document.querySelector('#menu'),
             scroll: true,
             update: true
         },
+        keyboardNavigation: {
+            enable: true
+        },
         sidebar: {
             expanded: {
                 use: '(min-width: 1300px)',
