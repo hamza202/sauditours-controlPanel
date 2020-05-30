@@ -1307,3 +1307,9 @@ footer.bg-white{
     color: #888888;
   }
 }
+
+.profile-drop-img{
+  @include media-breakpoint-down(sm){
+    margin-right: 5px;
+  }
+}
