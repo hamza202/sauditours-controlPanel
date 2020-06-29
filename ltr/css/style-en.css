@@ -1149,4 +1149,107 @@ footer.bg-white {
   .profile-drop-img {
     margin-right: 5px; } }
 
+.rating-card-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.21);
+  margin-bottom: 30px; }
+
+.rating-card-container .rating-card-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  padding: 2px;
+  border-radius: 50%; }
+
+.rating-card-container h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  font-size: 14px;
+  margin: 0; }
+
+.product-reviews-summary .rating-summary {
+  position: relative; }
+
+.product-reviews-summary .rating-summary .rating-result {
+  width: 98px;
+  position: relative;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300; }
+
+.product-reviews-summary .rating-summary .rating-result::before {
+  font-weight: 300;
+  content: '\f005' '\f005' '\f005' '\f005' '\f005';
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 100%;
+  z-index: 1;
+  color: #c7c7c7;
+  font-size: 16px;
+  height: 16px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  display: block;
+  font-style: normal;
+  speak: none; }
+
+.product-reviews-summary .rating-summary .rating-result span {
+  display: block;
+  overflow: hidden;
+  font-family: "Font Awesome 5 pro"; }
+
+.product-reviews-summary .rating-summary .rating-result span:before {
+  position: relative;
+  z-index: 2;
+  text-align: right;
+  color: #ffbb00;
+  font-size: 16px;
+  height: 18px;
+  letter-spacing: 1px;
+  line-height: 19px;
+  content: '\f005' '\f005' '\f005' '\f005' '\f005';
+  display: block;
+  font-style: normal;
+  font-weight: 900;
+  speak: none; }
+
+.stars {
+  margin-bottom: 0; }
+
+.rating-stars ul > li.star {
+  display: inline-block;
+  font-size: 7px; }
+
+.rating-stars ul {
+  list-style-type: none;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+
+.rating-stars ul > li.star {
+  display: inline-block; }
+
+.rating-stars ul > li.star > i.fa {
+  font-size: 2.5em;
+  color: #ccc; }
+
+.rating-stars ul > li.star.hover > i.fa {
+  color: #FFCC36; }
+
+.rating-stars ul > li.star.selected > i.fa {
+  color: #FF912C; }
+
+.page-link {
+  color: #1F2B6A; }
+
+.page-item.active .page-link {
+  background-color: #1F2B6A; }
+
 /*# sourceMappingURL=style-en.css.map */
